@@ -100,7 +100,51 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* SECCIÓN: GALERÍA BENTO (TENDENCIA 2026) */}
+      <section className="bg-[#0A0A0A] py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h4 className="font-sans text-[10px] tracking-[0.4em] text-[#BFA56A] uppercase mb-4">El Ritual</h4>
+            <h2 className="font-serif text-4xl md:text-5xl uppercase tracking-tighter text-white">La Experiencia <span className="italic text-gray-400 text-3xl md:text-4xl">Visual</span></h2>
+          </div>
 
+          {/* GRID BENTO */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+            
+            {/* Foto Grande 1 */}
+            <div className="col-span-2 row-span-2 overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1551135049-8a33b5883817?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Brasas" />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <span className="font-sans text-[9px] tracking-widest uppercase">El Fuego Real</span>
+              </div>
+            </div>
+
+            {/* Foto Vertical */}
+            <div className="col-span-1 row-span-2 overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Cocktail" />
+            </div>
+
+            {/* Foto Pequeña 1 */}
+            <div className="col-span-1 row-span-1 overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Corte" />
+            </div>
+
+            {/* Foto Pequeña 2 */}
+            <div className="col-span-1 row-span-1 overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1529692236671-f1f6e946a8b8?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Entrecot" />
+            </div>
+
+            {/* Foto Horizontal Inferior */}
+            <div className="col-span-2 row-span-1 overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Vino" />
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
+                 <p className="font-serif italic text-sm">"Maridajes seleccionados para cada corte"</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       {/* FOOTER BARRA DIRECCIÓN */}
       <section className="bg-black py-10 px-6 border-t border-white/5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.3em] text-gray-500 uppercase">
