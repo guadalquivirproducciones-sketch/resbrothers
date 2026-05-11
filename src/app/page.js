@@ -100,46 +100,59 @@ export default function Home() {
           </div>
         </div>
       </section>
-{/* SECCIÓN: GALERÍA BENTO (TENDENCIA 2026) */}
+{/* SECCIÓN: GALERÍA GOURMET CUADRADA */}
       <section className="bg-[#0A0A0A] py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h4 className="font-sans text-[10px] tracking-[0.4em] text-[#BFA56A] uppercase mb-4">El Ritual</h4>
-            <h2 className="font-serif text-4xl md:text-5xl uppercase tracking-tighter text-white">La Experiencia <span className="italic text-gray-400 text-3xl md:text-4xl">Visual</span></h2>
+            <h2 className="font-serif text-4xl md:text-5xl uppercase tracking-tighter text-white">
+              La Experiencia <span className="italic text-gray-400">Visual</span>
+            </h2>
           </div>
 
-          {/* GRID BENTO */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[250px]">
+          {/* GRID DE IMÁGENES CUADRADAS */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             
-            {/* Foto Grande 1 */}
-            <div className="col-span-2 row-span-2 overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1551135049-8a33b5883817?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Brasas" />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <span className="font-sans text-[9px] tracking-widest uppercase">El Fuego Real</span>
-              </div>
+            {/* Foto 1: El Producto Estrella */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1546241072-48010ad2862c?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Chuletón" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
 
-            {/* Foto Vertical */}
-            <div className="col-span-1 row-span-2 overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Cocktail" />
+            {/* Foto 2: El Fuego */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1551135049-8a33b5883817?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Brasas" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
 
-            {/* Foto Pequeña 1 */}
-            <div className="col-span-1 row-span-1 overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Corte" />
+            {/* Foto 3: La Burger de Chuleta (Detalle) */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Burger" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
 
-            {/* Foto Pequeña 2 */}
-            <div className="col-span-1 row-span-1 overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1529692236671-f1f6e946a8b8?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Entrecot" />
+            {/* Foto 4: Ambiente Viapol */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1550966842-284d66331273?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Interior" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
 
-            {/* Foto Horizontal Inferior */}
-            <div className="col-span-2 row-span-1 overflow-hidden group relative">
-              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Vino" />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6 text-center">
-                 <p className="font-serif italic text-sm">"Maridajes seleccionados para cada corte"</p>
-              </div>
+            {/* Foto 5: El Corte */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Corte Carne" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+            </div>
+
+            {/* Foto 6: Bodega / Vino */}
+            <div className="aspect-square overflow-hidden group relative">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=1000&auto=format&fit=crop" 
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Vino" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
             </div>
 
           </div>
