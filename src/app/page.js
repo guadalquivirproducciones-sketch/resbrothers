@@ -1,6 +1,13 @@
 import React from 'react';
 
 export default function Home() {
+  
+  // 🛑 INTERRUPTOR DE MANTENIMIENTO:
+  // Para ACTIVARLO (ocultar la web), quita las dos barras (//) de la línea de abajo.
+  // Para DESACTIVARLO (mostrar la web al cliente), vuelve a poner las dos barras (//) al principio.
+  
+  return <div className="bg-[#0A0A0A] min-h-screen text-white flex flex-col items-center justify-center gap-4"><span className="font-serif text-4xl text-[#BFA56A] tracking-widest">RES BROTHERS</span><p className="font-sans text-[10px] uppercase tracking-[0.3em] text-gray-500">Sitio temporalmente en mantenimiento</p></div>;
+
   return (
     <main className="bg-[#0A0A0A] min-h-screen text-white font-sans selection:bg-[#BFA56A] selection:text-black overflow-x-hidden scroll-smooth">
       
